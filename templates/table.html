@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <h1>Forecast Weather for the next 7 days</h1>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 table-custom">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">City</th>
+            <th scope="col">MinTemp</th>
+            <th scope="col">MaxTemp</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for d in data %}
+          <tr>
+            <th>{{d[0]}}</th>
+            <td>{{d[1]}}</td>
+            <td>{{d[2]}} ºC</td>
+            <td>{{d[3]}} ºC</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
