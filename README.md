@@ -29,7 +29,7 @@ And to remove:
 <!-- TOC -->
 
 - [Flask](#flask)
-    - [1. API endpoint for jasonified data](#1-api)
+    - [1. API](#1-api)
     - [2. Render templates](#2-render-templates)
         - [2.1. Python script](#21-python-script)
         - [2.2. HTML template](#22-html-template)
@@ -191,7 +191,7 @@ For Data Engineers
 The csvs folder is created
 
 ~~~~~~~~~~~~~~~~~~
-.. code:: python
+```python
 
 import pandas as pd
 import os
@@ -222,7 +222,7 @@ def createCsv(data, columns=None):
 Example script
 --------------
 ~~~~~~~~~~~~~~~~~~
-.. code:: python
+```python
 
 from darksky import forecast
 from datetime import date, timedelta
